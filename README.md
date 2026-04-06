@@ -1,4 +1,5 @@
 # 🦾 Robotic Arm with ROS2 & Computer Vision
+![Robot Simulation Preview](./robotic_arm_description/robot_preview.png)
 
 This project focuses on the design, simulation, and autonomous control of a robotic arm using **ROS2 Humble** and **Computer Vision**. It includes custom URDF descriptions for simulation and a dedicated vision pipeline for object detection.
 
