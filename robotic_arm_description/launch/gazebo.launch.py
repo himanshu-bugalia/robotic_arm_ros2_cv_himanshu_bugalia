@@ -22,7 +22,7 @@ def generate_launch_description():
     gazebo_resource_path = SetEnvironmentVariable(
         name="GZ_SIM_RESOURCE_PATH",
         value=[
-            str(Path(robotic_arm_description).parent.resolve())
+            str(Path(robotic_arm_description_dir).parent.resolve())
             ]
         )
     
