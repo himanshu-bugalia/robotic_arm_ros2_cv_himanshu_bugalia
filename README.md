@@ -1,24 +1,130 @@
-# 🦾 Robotic Arm with ROS2 & Computer Vision
-![Robot Simulation Preview](./robotic_arm_description/robot_preview.png)
+<h1 align="center">🤖 Smart 4-DOF Robotic Arm ROS2 Pipeline</h1>
 
-This project focuses on the design, simulation, and autonomous control of a robotic arm using **ROS2 Humble** and **Computer Vision**. It includes custom URDF descriptions for simulation and a dedicated vision pipeline for object detection.
+<p align="center">
+  ROS2 Humble • MoveIt2 • Gazebo • TF2 • URDF/Xacro • OpenCV • ros2_control
+</p>
+
+<p align="center">
+  A simulation-first robotic arm project featuring motion planning, TF tree validation, gripper actuation, and future vision-based pick & place integration.
+</p>
+
+---
+
+## 🎥 Project Demos
+
+### 🦾 Arm Motion Planning + Gazebo Execution
+[▶ Watch Arm Motion Demo](robotic_arm_description/assets/arm_motion.mp4)
+
+### 🤏 Gripper Motion Demo
+[▶ Watch Gripper Motion Demo](robotic_arm_description/assets/gripper_motion.mp4)
+
+---
+
+## 📸 Visual Outputs
+
+### 🧩 URDF Model with Joint Sliders GUI
+<p align="center">
+  <img src="robotic_arm_description/assets/urdf_joint_gui.png" width="900"/>
+</p>
+
+### 🌐 TF2 Frame Tree Graph
+<p align="center">
+  <img src="robotic_arm_description/assets/tf_tree_graph.png" width="900"/>
+</p>
+
+### 📍 TF Runtime Visualization
+<p align="center">
+  <img src="robotic_arm_description/assets/tf_tree_screenshot.png" width="900"/>
+</p>
+
+---
+
+## ✨ Key Features
+- ✅ 4-DOF robotic arm URDF/Xacro modeling
+- ✅ RViz2 joint GUI verification
+- ✅ MoveIt2 inverse kinematics + planning
+- ✅ Interactive marker based end-effector control
+- ✅ Gazebo synchronized execution
+- ✅ Gripper open-close motion
+- ✅ TF2 frame graph validation
+- ✅ ros2_control integration
+- 🔄 OpenCV based vision pipeline *(in progress)*
+- 🔄 Real hardware synchronization *(future scope)*
+
+---
+
+## 🛠️ Tech Stack
+| Category | Tools |
+|---|---|
+| Middleware | ROS2 Humble |
+| Planning | MoveIt2 |
+| Simulation | Gazebo |
+| Visualization | RViz2 |
+| Frames | TF2 |
+| Robot Model | URDF / Xacro |
+| Vision | OpenCV |
+| Control | ros2_control |
+| Languages | Python, C++ |
+| OS | Ubuntu 22.04 |
+
+---
 
 ## 📂 Repository Structure
-
-*   **`robotic_arm_description/`**: Contains the robot's physical model (URDF/Xacro) and 3D meshes (STL).
-*   **`robotic_arm_vision/`**: (In Development) ROS2 nodes for OpenCV/YOLO-based vision processing.
-*   **`robotic_arm_bringup/`**: (Coming Soon) Centralized launch files to start simulation and vision nodes.
-
-## 🛠️ Requirements
-
-- **OS:** Ubuntu 22.04
-- **ROS2 Version:** Humble Hawksbill
-- **Libraries:** OpenCV, `cv_bridge`, `sensor_msgs`
-
-## 🚀 Getting Started
-
-### 1. Installation
-Clone this repository into your ROS2 workspace `src` folder:
 ```bash
-cd ~/robotic_arm_ws/src
-git clone https://github.com
+robotic_arm_ros2_cv_himanshu_bugalia/
+├── robotic_arm_description/
+│   ├── assets/
+│   ├── config/
+│   ├── launch/
+│   ├── meshes/
+│   ├── rviz/
+│   ├── urdf/
+│   └── worlds/
+│
+├── robotic_arm_moveit/
+│   ├── config/
+│   ├── launch/
+│   ├── srdf/
+│   └── rviz/
+│
+├── roboticarm_controller/
+│   ├── src/
+│   ├── include/
+│   ├── launch/
+│   └── config/
+│
+├── README.md
+└── .gitignore
+```
+## 🧠 Package Responsibilities
+- **robotic_arm_description** → URDF/Xacro, meshes, RViz, Gazebo world
+- **robotic_arm_moveit** → MoveIt2 motion planning and execution pipeline
+- **roboticarm_controller** → ROS2 controllers, trajectory execution, gripper control
+---
+
+## ⚙️ Workflow
+1. Model robotic arm in **URDF/Xacro**
+2. Validate DOFs in **RViz2**
+3. Verify frame hierarchy using **TF2**
+4. Configure **MoveIt2 motion planning**
+5. Execute trajectories in **Gazebo**
+6. Integrate gripper control
+7. Extend toward **OpenCV based object detection**
+8. Future digital twin + hardware sync
+
+---
+
+## 🚀 Future Scope
+- 🎯 Color-based object detection
+- 📦 Vision-guided pick & place
+- 🤖 Physical robotic arm integration
+- 🌐 Digital twin synchronization
+- 📡 micro-ROS serial communication
+- 🧠 AI-based object classification
+
+---
+
+## 👨‍💻 Author
+**Himanshu Bugalia**  
+Mechanical Engineering | SGSITS Indore  
+Robotics • ROS2 • Computer Vision • Digital Twin
