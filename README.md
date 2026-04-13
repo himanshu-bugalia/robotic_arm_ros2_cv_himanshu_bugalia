@@ -13,10 +13,29 @@
 ## 🎥 Project Demos
 
 ### 🦾 Arm Motion Planning + Gazebo Execution
-[▶ Watch Arm Motion Demo](robotic_arm_description/assets/arm_motion.mp4)
+
+
+
+https://github.com/user-attachments/assets/8cba3138-fb6c-40a2-a577-498ec98ff462
+
+
+
+
+
+
+
 
 ### 🤏 Gripper Motion Demo
-[▶ Watch Gripper Motion Demo](robotic_arm_description/assets/gripper_motion.mp4)
+
+
+
+
+
+https://github.com/user-attachments/assets/19e05b8b-1f19-4ccd-9fd3-48055bf2a728
+
+
+
+
 
 ---
 
