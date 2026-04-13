@@ -16,8 +16,9 @@
 
 
 
-https://github.com/user-attachments/assets/8cba3138-fb6c-40a2-a577-498ec98ff462
 
+
+https://github.com/user-attachments/assets/fcd272e6-22be-42c3-95cd-de1ab4f5a574
 
 
 
@@ -31,7 +32,8 @@ https://github.com/user-attachments/assets/8cba3138-fb6c-40a2-a577-498ec98ff462
 
 
 
-https://github.com/user-attachments/assets/19e05b8b-1f19-4ccd-9fd3-48055bf2a728
+https://github.com/user-attachments/assets/66b2b837-64e9-4d77-9a32-0c9a154dee75
+
 
 
 
@@ -116,7 +118,7 @@ robotic_arm_ros2_cv_himanshu_bugalia/
 └── .gitignore
 ```
 ## 🧠 Package Responsibilities
-- **robotic_arm_description** → URDF/Xacro, meshes, RViz, Gazebo world
+- **robotic_arm_description** → URDF/Xacro, meshes, RViz
 - **robotic_arm_moveit** → MoveIt2 motion planning and execution pipeline
 - **roboticarm_controller** → ROS2 controllers, trajectory execution, gripper control
 ---
@@ -128,19 +130,17 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-### Launch robot description
+### Launch Gazebo
 ```bash
-ros2 launch robotic_arm_description display.launch.py
+ros2 launch robotic_arm_description gazebo.launch.py
 ```
-
+### Launch controller
+```bash
+ros2 launch roboticarm_controller controller.launch.py
+```
 ### Launch MoveIt2
 ```bash
-ros2 launch robotic_arm_moveit demo.launch.py
-```
-
-### Launch controller + Gazebo
-```bash
-ros2 launch roboticarm_controller gazebo_control.launch.py
+ros2 launch robotic_arm_moveit moveit.launch.py
 ```
 
 ## ⚙️ Workflow
