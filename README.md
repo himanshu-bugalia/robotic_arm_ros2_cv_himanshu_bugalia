@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/66b2b837-64e9-4d77-9a32-0c9a154dee75
 
 
 
-
+✔ Demonstrates synchronized motion execution between MoveIt (planning) and Gazebo (simulation)
 ---
 
 ## 📸 Visual Outputs
