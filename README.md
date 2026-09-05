@@ -50,11 +50,10 @@ https://github.com/user-attachments/assets/1413e955-63a3-46aa-a167-31a3e94904d2
 2. [🏗️ Build the Workspace](#-build-the-workspace)
 3. [🎮 Running the Project](#-running-the-project)
 4. [📂 Repository Structure](#-repository-structure)
-5. [🔗 ROS2 Node Graph](#-ros2-node-graph)
-6. [🚀 How It Works](#-how-it-works)
-7. [💡 Customization Guide](#-customization-guide)
-8. [⚠️ Troubleshooting](#️-troubleshooting)
-9. [📚 References](#-references)
+5. [🚀 How It Works](#-how-it-works)
+6. [💡 Customization Guide](#-customization-guide)
+7. [⚠️ Troubleshooting](#️-troubleshooting)
+8. [📚 References](#-references)
 
 ---
 
