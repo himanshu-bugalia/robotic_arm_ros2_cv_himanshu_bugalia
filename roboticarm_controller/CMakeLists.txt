@@ -8,12 +8,16 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 
-install(
-  FILES config/roboticarm_controllers.yaml 
-  FILES launch/controller.launch.py
-  DESTINATION share/${PROJECT_NAME}/config
-)
+# install(
+#   FILES config/roboticarm_controllers.yaml 
+#   FILES launch/controller.launch.py
+#   DESTINATION share/${PROJECT_NAME}/config
+# )
 
+install(
+  DIRECTORY config launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

@@ -1,13 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robotic_arm">
     <xacro:arg name="is_ignition" default="true"/>
-
-    <!-- Include Gazebo Parameters -->
-    <xacro:include filename="$(find robotic_arm_description)/urdf/robotic_arm_gazebo.xacro" />
-
-    <!-- Include ros2_control Plugins -->
-    <xacro:include filename="$(find robotic_arm_description)/urdf/robotic_arm_ros2_control.xacro" />
-
     
     <!-- Useful XACRO Variables (Properties) -->
     <xacro:property name="PI" value="3.14159265359" />
@@ -99,12 +92,12 @@
                 <mesh filename="package://robotic_arm_description/meshes/claw_support.STL" scale="0.01 0.01 0.01"/>
             </geometry>
         </visual>
-        <collision>
+        <!-- <collision>
             <origin rpy="0 0 ${PI / 2}" xyz="0 -0.05 -0.15"/>
             <geometry>
                 <mesh filename="package://robotic_arm_description/meshes/claw_support.STL" scale="0.01 0.01 0.01"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="gripper_right">
@@ -135,22 +128,6 @@
             <origin rpy="0 0 -${PI / 2}" xyz="-0.04 0.50 -0.1"/>
             <geometry>
                 <mesh filename="package://robotic_arm_description/meshes/left_finger.STL" scale="0.01 0.01 0.01"/>
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="rgb_camera">
-        <xacro:default_inertial mass="0.001"/>
-        <visual>
-            <origin rpy="-1.57 0 -1.57" xyz="-0.1 0.125 0.15"/>
-            <geometry>
-                <mesh filename="package://robotic_arm_description/meshes/pi_camera.STL" scale="0.01 0.01 0.01"/>
-            </geometry>
-        </visual>
-        <collision>
-            <origin rpy="-1.57 0 -1.57" xyz="-0.1 0.125 0.15"/>
-            <geometry>
-                <mesh filename="package://robotic_arm_description/meshes/pi_camera.STL" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
     </link>
@@ -214,12 +191,5 @@
                effort="${effort}" velocity="${velocity}"/>
         <mimic joint="joint_4" multiplier="-1"/>
     </joint>
-
-    <joint name ="rgb_camera_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link = "rgb_camera"/>
-        <origin xyz="0 0.45 0.2" rpy="0 -0.5 1.57"/>
-    </joint>
-
-
+    
 </robot>
