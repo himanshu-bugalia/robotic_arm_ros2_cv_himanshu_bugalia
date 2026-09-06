@@ -12,6 +12,12 @@ A ROS2-based robotic manipulation system implementing perception, motion plannin
 
 ## 🎥 Project Demos
 
+### 🎯 Full Vision-Guided Pick & Place Demo
+
+https://github.com/user-attachments/assets/1413e955-63a3-46aa-a167-31a3e94904d2
+
+🧠 End-to-end pipeline: OpenCV/color-based object detection → pymoveit2 grasp planning → synchronized execution in Gazebo and RViz
+
 ### 🦾 Arm Motion Planning + Gazebo Execution
 
 https://github.com/user-attachments/assets/fcd272e6-22be-42c3-95cd-de1ab4f5a574
@@ -23,12 +29,6 @@ https://github.com/user-attachments/assets/fcd272e6-22be-42c3-95cd-de1ab4f5a574
 https://github.com/user-attachments/assets/66b2b837-64e9-4d77-9a32-0c9a154dee75
 
 ✔ Demonstrates synchronized motion execution between MoveIt (planning) and Gazebo (simulation)
-
-### 🎯 Full Vision-Guided Pick & Place Demo
-
-https://github.com/user-attachments/assets/1413e955-63a3-46aa-a167-31a3e94904d2
-
-🧠 End-to-end pipeline: OpenCV/color-based object detection → pymoveit2 grasp planning → synchronized execution in Gazebo and RViz
 
 ---
 
